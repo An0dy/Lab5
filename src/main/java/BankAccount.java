@@ -13,23 +13,78 @@ public class BankAccount {
      * You may want to use this to distinguish between different kinds of accounts.
      */
     public enum BankAccountType {
+        /**
+         * blah.
+         */
         CHECKINGS,
+        /**
+         * blah.
+         */
         SAVINGS,
+        /**
+         * blah.
+         */
         STUDENT,
+        /**
+         * blah.
+         */
         WORKPLACE
     }
 
+    /**
+     * blah.
+     */
     private int accountNumber;
-    public BankAccountType accountType;
+    /**
+     * blah.
+     */
+    private BankAccountType accountType;
+    /**
+     * blah.
+     */
     private double accountBalance;
+    /**
+     * blah.
+     * @param amount set amount.
+     */
+    public void changeBalance(final double amount) {
+        accountBalance += amount;
+    }
+    /**
+     * blah.
+     */
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+    /**
+     * blah.
+     */
     private String ownerName;
-    public double interestRate;
+    /**
+     * blah.
+     * @param newName set new name.
+     */
+    public void changeName(final String newName) {
+        ownerName = newName;
+    }
+    /**
+     * blah.
+     */
+    private double interestRate;
+    /**
+     * blah.
+     */
     private double interestEarned;
 
+    /**
+     * blah.
+     * @param name ssdf.
+     * @param accountCategory sdfsdf.
+     */
     public BankAccount(final String name, final BankAccountType accountCategory) {
-        /*
-         * Implement this function
-         */
+        ownerName = name;
+        accountType = accountCategory;
+
     }
 
     /*
